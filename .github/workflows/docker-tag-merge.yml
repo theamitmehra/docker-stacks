@@ -2,7 +2,7 @@ name: Merge single platform tags
 
 env:
   REGISTRY: quay.io
-  PUSH_TO_REGISTRY: ${{ (github.repository_owner == 'jupyter' || github.repository_owner == 'mathbunnyru') && (github.ref == 'refs/heads/main' || github.event_name == 'schedule') }}
+  PUSH_TO_REGISTRY: ${{ (github.repository_owner == 'jupyter' || github.repository_owner == 'mathbunnyru' || github.repository_owner == 'theamitmehra') && (github.ref == 'refs/heads/main' || github.event_name == 'schedule') }}
 
 on:
   workflow_call:
